@@ -1,0 +1,594 @@
+a {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    text-align: center
+}
+
+a:hover,a:link,a:focus{
+    text-decoration : none;
+}
+
+.blue {
+    background-color: #29abe2
+}
+
+.blue:hover {
+    background-color: #2a80b9
+}
+
+.eor-yellow {
+    background-color: #f1d1a0;
+    color: #f8ead4;
+    font-size: 16px
+}
+
+.yellow {
+    background-color: #f8941f
+}
+
+.yellow:hover {
+    background-color: #f5a623
+}
+
+.green {
+    background-color: #0d9d58
+}
+
+.green:hover {
+    background-color: #5a7b2d
+}
+
+.gray {
+    background-color: #a0a0a0
+}
+
+.gray:hover {
+    background-color: #918686
+}
+
+.red {
+    background-color: #c33
+}
+
+.red:hover {
+    background-color: #982c2c
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2
+}
+
+.container header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    font-size: 0;
+    z-index: 99;
+    margin: 0 auto
+}
+
+.container header>span {
+    display: inline-block;
+    float: left;
+    margin: 10px 0;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    border-right: 1px solid #b7b7b7;
+    box-sizing: border-box
+}
+
+.container header span:last-child {
+    border-right: none
+}
+
+.container .contenr,
+.container .contenr .comBox {
+    width: 100%;
+    height: auto
+}
+
+.container .contenr .affiche {
+    width: 100%;
+    height: 50px;
+    padding: 5px 0;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+    overflow: hidden
+}
+
+.container .contenr .affiche p {
+    height: 25px;
+    line-height: 25px;
+    color: #a9a9a9
+}
+
+.comHead {
+    width: 100%;
+    height: 1px;
+    background-color: #b7b7b7;
+    margin-bottom: 40px;
+    position: relative
+}
+
+.comHead span {
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #595959;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%)
+}
+
+.container .contenr .comBox .comConter {
+    width: 100%;
+    height: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    font-size: 0;
+    overflow: hidden
+}
+
+.container .contenr .comBox .comConter>div,
+.container .contenr .comBox .comBox .comConter>div {
+    width: 49%;
+    height: 190px;
+    display: inline-block;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    overflow: hidden
+}
+
+.container .contenr .comBox .comConter>div .imgBox {
+    width: 100%;
+    height: 90px;
+    overflow: hidden
+}
+
+.container .contenr .comBox .comConter>div .imgBox img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAWCAYAAAB5VTpOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjZEQkQ3NDZFOEYxNzExRTQ5NUZCRjQzMkM2RTA1RTJEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjZEQkQ3NDZGOEYxNzExRTQ5NUZCRjQzMkM2RTA1RTJEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NkRCRDc0NkM4RjE3MTFFNDk1RkJGNDMyQzZFMDVFMkQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NkRCRDc0NkQ4RjE3MTFFNDk1RkJGNDMyQzZFMDVFMkQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5hmE5XAAACP0lEQVR42uxYy3HCMBA1DPe4g5AKYiqwUwF0YHPiSirAVAA5copLIBUgOnAJTgemAkeaeZq8ESvGgJPh4J3ZsbQyq9XT/sygaZqgp18a9ID0gPSA3AXIYrGww63mUnNxh36leQk9hjLNkeZc85jkbfQUd9pyRrvd7kw2uvC+Mby+YZ+ExjHmIeZj6DUgrTTPWx4yBih/ThIgY3CIpz1gjRuVYuyNDM6dtYyA5XeM7k+s7R8lZCRAMtyeoVfNKcZHAued3P1wwUMaeIMEVgYde8crtx5bM0d3gN8vuwRkKMiM0QMAsMZ4LRiiBDfOAUJDnnSg+Qrub+cbPO1BQ6xXpN/uIcmi//CQeygnL1A4RObc8tbJKZWgp3DAXmGeO3sljw4I54kYB+aDmfB4otAy3vPiAeVhcggn11toixv+QsKshNCypffoASPy2JN0YN/NgDxT4rwmVhN4QSFUnJLcPUZ1kmgjyFJK8AEl+k5p6JHPKJEFFPNt6Yjsb281p1Jr1qaaPwTPqbE+QTK3HFCCtzy/orHrBJDvGzdcAoSEwiWn8hpSaFkQIvKgpOW+hVByXVmIfRMnHPe+kBt6YjWlDjIC820enNLK4cJl1/YxOSqMgv4TZBEl2S4odQCJ4I2Zc9lTX4UaeZA/Ua9hjebk52vMFOUF23QpPAsqwxG61Bnt1QVNnM8NBVnllGvl+xSQAKmpu7SeUZPHrHHAiuaVUHaZKuoq7SdA6fQtXVDZUqb6z//+/5AekB6Qv6AfAQYAZXq9jhikZ9kAAAAASUVORK5CYII=") no-repeat center #f5f5f5
+}
+
+.container .contenr .comBox .comConter>div:nth-child(odd),
+.container .contenr .comBox .comBox .comConter>div:nth-child(odd) {
+    margin-right: 1%
+}
+
+.container .contenr .comBox .comConter>div:nth-child(even),
+.container .contenr .comBox .comBox .comConter>div:nth-child(even) {
+    margin-left: 1%
+}
+
+.container .contenr .comBox .comConter .comInfo {
+    width: 100%;
+    height: 110px;
+    text-align: center
+}
+
+.container .contenr .comBox .comConter .comInfo .comTitle {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    color: #737373;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.container .contenr .comBox .comConter .comInfo .comNum {
+    width: 100%;
+    height: 17px;
+    line-height: 17px;
+    color: #ff9800;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.container .contenr .comBox .comConter .comInfo .comNum div {
+    width: 130px;
+    height: 25px;
+    margin: 0 auto
+}
+
+.container .contenr .comBox .comConter .comInfo .comNum div img {
+    display: block;
+    height: 14px;
+    width: 17px;
+    margin-top: 3px
+}
+
+.container .contenr .comBox .comConter .comInfo .comFooter {
+    width: 100%;
+    height: 30px
+}
+
+.container .contenr .comBox .comConter .comInfo .comFooter p {
+    background-color: #dddddd;
+    border-radius: 10px;
+    width: 150px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #fff;
+    margin: 0 auto
+}
+
+.container .contenr .comBox .comConter .comInfo .comFooter a {
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #29a7e1;
+    text-decoration: none
+}
+
+.container .comBanner {
+    width: 100%;
+    height: 190px;
+    margin-bottom: 10px;
+    overflow: hidden
+}
+
+.container .comBanner img {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.container .comDinfo {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    padding: 15px 0 15px 30px;
+    margin-bottom: 10px;
+    box-sizing: border-box
+}
+
+.container .comDinfo .comTit,
+.container .comDinfo .comNums {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px
+}
+
+.container .comDinfo .comTit {
+    color: #999999
+}
+
+.container .comDinfo .comTit span {
+    color: #595959
+}
+
+.container .comDinfo .comNums {
+    font-size: 0
+}
+
+.container .comDinfo .comNums>div {
+    display: inline-block;
+    width: 50%;
+    height: 35px;
+    font-size: 14px;
+    color: #ff9800
+}
+
+.container .comDinfo .comNums>div img {
+    display: block;
+    height: 17px;
+    width: 17px;
+    margin-top: 8px
+}
+
+.container .comDinfo .comNums>div span {
+    display: inline-block;
+    margin-left: 10px
+}
+
+.container .comBnt,
+.container .ofIntegral {
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0
+}
+
+.container .comBnt {
+    background-color: #ff9800
+}
+
+.container .ofIntegral {
+    background-color: #A0A0A0
+}
+
+.container .comSummary {
+    width: 100%;
+    height: auto;
+    text-align: center
+}
+
+.container .comSummary .comsTits {
+    width: 100%;
+    height: 46px;
+    line-height: 45px;
+    border-bottom: 1px solid #a9a9a9
+}
+
+.container .comSummary .comsTits h1 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #6f6f6f;
+    margin: 0 auto;
+    position: relative;
+    width: 100px;
+    height: 45px
+}
+
+.container .comSummary .comsTits h1:after,
+.container .comSummary .comsTits h1:before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    background-color: #a9a9a9
+}
+
+.container .comSummary .comsTits h1:after {
+    right: 0
+}
+
+.container .comSummary .comsTits h1:before {
+    left: 0
+}
+
+.container .comSummary .conConts {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    line-height: 40px;
+    color: #828282;
+    padding-bottom: 50px
+}
+
+.container .comSummary .conConts img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)
+}
+
+.container .recerdTit {
+    width: 100%;
+    height: 50px;
+    overflow: hidden
+}
+
+.container .comList {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 0;
+    overflow: hidden
+}
+
+.container .comList:not(:first-child) {
+    border-top: none
+}
+
+.container .comList div {
+    display: inline-block;
+    float: left
+}
+
+.container .comList .conListImg,
+.container .comList .conListInfo,
+.container .comList .conListContr {
+    width: 30%;
+    height: 140px
+}
+
+.container .comList .conListImg>img,
+.container .comList .conListInfo>img,
+.container .comList .conListContr>img {
+    display: block;
+    height: 100%;
+    width: 100%
+}
+
+.container .comList .conListContr .comTits,
+.container .comList .conListContr .cominte,
+.container .comList .conListContr .comCode,
+.container .comList .conListContr .comExpired {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    text-indent: 5px;
+    float: left
+}
+
+.container .comList .conListContr .cominte {
+    color: #ff9800
+}
+
+.container .comList .conListContr .cominte img {
+    margin-top: 7px;
+    margin-left: 5px
+}
+
+.container .comList .conListContr .comCode {
+    color: #626262
+}
+
+.conListInfo span.noused,
+.conListInfo span.aused,
+.conListInfo span.expired {
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    background-size: 75px 35px !important;
+    background-position: center center !important
+}
+
+.conListInfo span.noused.noused,
+.conListInfo span.aused.noused,
+.conListInfo span.expired.noused {
+    background: url(../images/noused.png) no-repeat
+}
+
+.conListInfo span.noused.aused,
+.conListInfo span.aused.aused,
+.conListInfo span.expired.aused {
+    background: url(../images/aused.png) no-repeat
+}
+
+.conListInfo span.noused.expired,
+.conListInfo span.aused.expired,
+.conListInfo span.expired.expired {
+    background: url(../images/expired.png) no-repeat
+}
+
+.container .comList .moreDet {
+    display: inline-block;
+    width: 10%;
+    height: 140px;
+    background: url(../images/more.png) no-repeat;
+    background-size: 12px 20px;
+    background-position: center center
+}
+
+.uCode {
+    color: #bababa !important
+}
+
+.aCode {
+    color: #626262 !important
+}
+
+.items {
+    width: 120px;
+    height: 100%;
+    margin: 0 auto;
+    color: #595959
+}
+
+.items img {
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    margin-right: 10px
+}
+
+.items span {
+    font-size: 14px;
+    display: inline-block;
+    line-height: 30px
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.labels {
+    color: #ff9800
+}
+
+.win {
+    width: 80% !important
+}
+
+[v-cloak] {
+    display: none;
+  }
+
+.fade-enter-active, .fade-leave-active {
+    transition: all .3s
+}
+.fade-enter, .fade-leave-to{
+     opacity: 0;
+}
+
+.h-enter-active, .h-leave-active {
+    transition: all .3s
+}
+.h-enter, .h-leave-to{
+     height: 0;
+}
+
+  .overHiden {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  img.filter_gray{
+      filter:grayscale(100%) !important;
+      opacity: 0.5;
+  }
+
+  img.no_filter{
+      filter:none !important;
+      opacity: 1;
+  }
+
+  .text-over{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+

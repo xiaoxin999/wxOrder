@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.box (@width, @height) {
+    width: @width*1px;
+    height: @height*1px;
+}
+
+.setBox(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+.max-auto () {
+    margin: 0 auto;
+}
+
+.text-overflow () {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@baseFontSize: 75;
+.px2rem(@name, @px) {
+    @{name}: @px / @baseFontSize * 1rem;
+}
+
+// @nice-blue: #5B83AD;
+// @light-blue: @nice-blue + #111;
+// .header {
+//   color: @light-blue;
+//   font-size: 52px;
+// }
